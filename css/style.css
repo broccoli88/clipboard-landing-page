@@ -140,6 +140,14 @@ h3 {
     height: 45px;
 }
 
+/* Container */
+
+.container {
+    width: 100%;
+    max-width: 810px;
+    margin: 0 auto;
+}
+
 /* Media */
 
 .media {
@@ -159,4 +167,22 @@ h3 {
 
 .h2-header__heading {
     margin-bottom: 1.5rem;
+}
+
+/* Feature */
+
+.feature {
+    text-align: center;
+}
+
+.feature__heading {
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1440px) {
+    .feature {
+        text-align: left;
+        font-size: 1.5rem;
+    }
 }
