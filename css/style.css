@@ -7,6 +7,14 @@
     --color-grayish-blue: hsl(201, 11%, 66%);
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* Typography */
 
 html {
@@ -57,5 +65,40 @@ h3 {
 
     h3 {
         font-size: 2.3rem;
+    }
+}
+
+/* Buttons */
+
+.btn {
+    background-color: transparent;
+    border-radius: 40px;
+    border: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding-block: 1.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+.btn--cyan {
+    background: var(--color-strong-cyan);
+    color: white;
+    box-shadow: 0 1.5px 0 1.5px hsl(171, 66%, 38%),
+        0 0 15px var(--color-strong-cyan);
+}
+
+.btn--blue {
+    background: var(--color-light-blue);
+    color: white;
+    box-shadow: 0 1.5px 0px 1.5px hsl(233, 100%, 64%),
+        0 0 15px var(--color-light-blue);
+}
+
+@media (min-width: 1440px) {
+    .btn {
+        width: fit-content;
+        padding-inline: 3.5rem;
     }
 }
