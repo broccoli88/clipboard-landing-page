@@ -119,7 +119,33 @@ h3 {
     height: 55px;
 }
 
-.icon {
+.icon__logo {
     width: 100%;
     height: 100%;
+}
+
+/* Icons */
+
+.icon-container {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+}
+
+/* Media */
+
+.media {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.media__heading {
+    margin: 3rem 0 1.5rem;
 }
